@@ -9,29 +9,448 @@
       name="description"
       content="Web site created using create-react-app"
     />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+    <title>last.fm</title>
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    <header class="header">
+      <div class="header__progress-bar"></div>
+      <div class="header__main">
+        <div class="player">
+          <div class="player__image">
+            <img class="player__track-icon" src="images/track_not_playing.png">
+          </div>
+          <div class="player__youtube-button"></div>
+          <div class="track-management">
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+          </div>
+          <div class="player__text"></div>
+        </div>
+        <div class="name">
+          <a class="name__link" href="">Last.fm</a>
+        </div>
+        <nav class="nav">
+          <ul class="nav__menu menu">
+            <li><a href="search.html"><div class="nav__search"></div></a></li>
+            <li><a href="">Home</a></li>
+            <li><a href="">Life</a></li>
+            <li><a href="">Music</a></li>
+            <li><a href="">Charts</a></li>
+            <li><a href="">Events</a></li>
+            <li><a href="">Features</a></li>
+            <li class="nav__profile"><a href=""><img class="nav__icon-profile" src="images/profile-img.jpg"></a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="content">
+      <h1 class="content__main-title title">Music</h1>
+      <h2 class="title singers__title">Hot right now</h2>
+      <div class="singers container">
+        <div class="container singers-container">
+          <div class="singer">
+           <div class="singer__photo">
+            <a href=""><img src="images/01.jpg"> </a>
+           </div>
+           <div class="singer__name header-name"><a class="singer__name-link" href="">BTS</a></div>
+           <ul class="singer__genres-list genres-list">
+            <li class="singer__genre "><a href="" class="singer__genre-text first-genre">k-pop</a></li>
+            <li class="singer__genre"><a href="" class="singer__genre-text">bts</a></li>
+            <li class="singer__genre"><a href="" class="singer__genre-text">kpop</a></li>
+           </ul>
+          </div>
+          <div class="singer">
+           <div class="singer__photo">
+            <a href=""><img src="images/02.jpg"> </a>
+           </div>
+           <div class="singer__name header-name"><a class="singer__name-link" href="">Kanye West</a></div>
+           <div class="singer__genres">
+            <ul class="singer__genres-list genres-list">
+              <li class="singer__genre"><a href="" class="singer__genre-text first-genre">hip-hop</a></li>
+              <li class="singer__genre"><a href="" class="singer__genre-text">rap</a></li>
+              <li class="singer__genre"><a href="" class="singer__genre-text">hip hop</a></li>
+            </ul>
+           </div>
+          </div>
+          <div class="singer">
+           <div class="singer__photo">
+            <a href=""><img src="images/03.jpg"></a> 
+           </div>
+           <div class="singer__name header-name"><a class="singer__name-link" href="">Joji</a></div>
+           <div class="singer__genres">
+            <ul class="singer__genres-list genres-list">
+              <li class="singer__genre"><a href="" class="singer__genre-text first-genre">lo-fi</a></li>
+              <li class="singer__genre"><a href="" class="singer__genre-text">rnb</a></li>
+              <li class="singer__genre"><a href="" class="singer__genre-text">hip-hop</a></li>
+            </ul>
+           </div>
+          </div>
+          <div class="singer">
+           <div class="singer__photo">
+            <a href=""><img src="images/04.jpg"></a> 
+           </div>
+           <div class="singer__name header-name"><a class="singer__name-link" href="">Kendrick Lamar</a></div>
+           <div class="singer__genres">
+            <ul class="singer__genres-list genres-list">
+              <li class="singer__genre"><a href="" class="singer__genre-text first-genre">hip-hop</a></li>
+              <li class="singer__genre"><a href="" class="singer__genre-text">rap</a></li>
+              <li class="singer__genre"><a href="" class="singer__genre-text">hip hop</a></li>
+            </ul>
+           </div>
+          </div>
+          <div class="singer">
+           <div class="singer__photo">
+            <a href=""><img src="images/05.jpg"></a>
+           </div>
+           <div class="singer__name header-name"><a class="singer__name-link" href="">The Weeknd</a></div>
+           <div class="singer__genres">
+            <ul class="singer__genres-list genres-list">
+              <li class="singer__genre"><a href="" class="singer__genre-text first-genre">rnb</a></li>
+              <li class="singer__genre"><a href="" class="singer__genre-text">electronic</a></li>
+              <li class="singer__genre"><a href="" class="singer__genre-text">canadian</a></li>
+            </ul>
+           </div>
+          </div>
+          <div class="singer">
+           <div class="singer__photo">
+            <a href=""><img src="images/06.jpg"> </a>
+           </div>
+           <div class="singer__name header-name"><a class="singer__name-link" href="">Tyler, the Creator</a></div>
+           <div class="singer__genres">
+            <ul class="singer__genres-list genres-list">
+              <li class="singer__genre"><a href="" class="singer__genre-text first-genre">hip-hop</a></li>
+              <li class="singer__genre"><a href="" class="singer__genre-text">rap</a></li>
+              <li class="singer__genre"><a href="" class="singer__genre-text">ofwgkta</a></li>
+            </ul>
+           </div>
+          </div>
+          <div class="singer">
+           <div class="singer__photo">
+            <a href=""><img src="images/07.jpg"> </a>
+           </div>
+           <div class="singer__name header-name"><a class="singer__name-link" href="">Playboi Carti</a></div>
+           <div class="singer__genres">
+            <ul class="singer__genres-list genres-list">
+              <li class="singer__genre"><a href="" class="singer__genre-text first-genre">trap</a></li>
+              <li class="singer__genre"><a href="" class="singer__genre-text">hip-hop</a></li>
+              <li class="singer__genre"><a href="" class="singer__genre-text">cloud rap</a></li>
+            </ul>
+           </div>
+          </div>
+          <div class="singer">
+           <div class="singer__photo">
+            <a href=""><img src="images/08.jpg"> </a>
+           </div>
+           <div class="singer__name header-name"><a class="singer__name-link" href="">Arctic Monkeys</a></div>
+           <div class="singer__genres">
+            <ul class="singer__genres-list genres-list">
+              <li class="singer__genre"><a href="" class="singer__genre-text first-genre">indie rock</a></li>
+              <li class="singer__genre"><a href="" class="singer__genre-text">indie</a></li>
+              <li class="singer__genre"><a href="" class="singer__genre-text">british</a></li>
+            </ul>
+           </div>
+          </div>
+          <div class="singer">
+           <div class="singer__photo">
+            <a href=""><img src="images/09.jpg"> </a>
+           </div>
+           <div class="singer__name header-name"><a class="singer__name-link" href="">Bladee</a></div>
+           <div class="singer__genres">
+            <ul class="singer__genres-list genres-list">
+              <li class="singer__genre"><a href="" class="singer__genre-text first-genre">cloud rap</a></li>
+              <li class="singer__genre"><a href="" class="singer__genre-text">hip hop</a></li>
+              <li class="singer__genre"><a href="" class="singer__genre-text">trap</a></li>
+            </ul>
+           </div>
+          </div>
+          <div class="singer">
+           <div class="singer__photo">
+            <a href=""><img src="images/10.jpg"> </a>
+           </div>
+           <div class="singer__name header-name"><a class="singer__name-link" href="">Frank Ocean</a></div>
+           <div class="singer__genres">
+            <ul class="singer__genres-list genres-list">
+              <li class="singer__genre"><a href="" class="singer__genre-text first-genre">rnb</a></li>
+              <li class="singer__genre"><a href="" class="singer__genre-text">soul</a></li>
+              <li class="singer__genre"><a href="" class="singer__genre-text">hip-hop</a></li>
+            </ul>
+           </div>
+          </div>
+          <div class="singer">
+           <div class="singer__photo">
+            <a href=""><img src="images/11.jpg"> </a>
+           </div>
+           <div class="singer__name header-name"><a class="singer__name-link" href="">Lana Del Rey</a></div>
+           <div class="singer__genres">
+            <ul class="singer__genres-list genres-list">
+              <li class="singer__genre"><a href="" class="singer__genre-text first-genre">indie</a></li>
+              <li class="singer__genre"><a href="" class="singer__genre-text">female vocalists</a></li>
+              <li class="singer__genre"><a href="" class="singer__genre-text">pop</a></li>
+            </ul>
+           </div>
+          </div>
+          <div class="singer">
+           <div class="singer__photo">
+            <a href=""><img src="images/12.jpg"> </a>
+           </div>
+           <div class="singer__name header-name"><a class="singer__name-link" href="">Juice WRLD</a></div>
+           <div class="singer__genres">
+            <ul class="singer__genres-list genres-list">
+              <li class="singer__genre"><a href="" class="singer__genre-text first-genre">hip-hop</a></li>
+              <li class="singer__genre"><a href="" class="singer__genre-text">rap</a></li>
+              <li class="singer__genre"><a href="" class="singer__genre-text">emo rap</a></li>
+            </ul>
+           </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="title tracks__title">Popular tracks</h2>
+      <div class="container tracks-container">
+        <div class="track">
+          <div class="track__logo"><img src="images/t01.jpg"></div>
+          <div class="track__info">
+          <div class="track__name header-name"><a class="track__name-link" href="">The Astronaut</a></div>
+          <div class="track__author"><a class="track__author-link" href="">Jin</a></div>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+            <ul class="track__genres-list genres-list">
+              <li class="track__genre"><a href="" class="track__genre-text first-genre">coldplay</a></li>
+              <li class="track__genre"><a href="" class="track__genre-text">jin</a></li>
+              <li class="track__genre"><a href="" class="track__genre-text">rm</a></li>
+            </ul>
+
+        </div>
+        </div>
+        <div class="track">
+          <div class="track__logo"><img src="images/t02.jpg"></div>
+          <div class="track__info">
+          <div class="track__name header-name"><a class="track__name-link" href="">ANTIFRAGILE</a></div>
+          <div class="track__author"><a class="track__author-link" href="">LE SSERAFIM</a></div>
+
+            <ul class="track__genres-list genres-list">
+              <li class="track__genre"><a href="" class="track__genre-text first-genre">reggaeton</a></li>
+              <li class="track__genre"><a href="" class="track__genre-text">k-pop</a></li>
+            </ul>
+
+          </div>
+        </div>
+        <div class="track">
+          <div class="track__logo"><img src="images/t03.jpg"></div>
+          <div class="track__info">
+          <div class="track__name header-name"><a class="track__name-link" href="">Do you miss me?</a></div>
+          <div class="track__author"><a class="track__author-link" href="">PinkPantheress</a></div>
+
+            <ul class="track__genres-list genres-list">
+              <li class="track__genre"><a href="" class="track__genre-text first-genre">uk garage</a></li>
+              <li class="track__genre"><a href="" class="track__genre-text">rnb</a></li>
+              <li class="track__genre"><a href="" class="track__genre-text">drum and bass</a></li>
+            </ul>
+
+          </div>
+        </div>
+        <div class="track">
+          <div class="track__logo"><img src="images/t04.jpg"></div>
+          <div class="track__info">
+          <div class="track__name header-name"><a class="track__name-link" href="">Bejeweled</a></div>
+          <div class="track__author"><a class="track__author-link" href="">Taylor Swift</a></div>
+
+            <ul class="track__genres-list genres-list">
+              <li class="track__genre"><a href="" class="track__genre-text first-genre">pop</a></li>
+              <li class="track__genre"><a href="" class="track__genre-text">singer-songwriter</a></li>
+              <li class="track__genre"><a href="" class="track__genre-text">electronic</a></li>
+            </ul>
+
+          </div>
+        </div>
+        <div class="track">
+          <div class="track__logo"><img src="images/t05.jpg"></div>
+          <div class="track__info">
+          <div class="track__name header-name"><a class="track__name-link" href="">Rich Flex</a></div>
+          <div class="track__author"><a class="track__author-link" href="">Drake</a></div>
+
+            <ul class="track__genres-list genres-list">
+              <li class="track__genre"><a href="" class="track__genre-text first-genre">-1001747063611</a></li>
+              <li class="track__genre"><a href="" class="track__genre-text">myspotigrambot</a></li>
+            </ul>
+
+          </div>
+        </div>
+        <div class="track">
+          <div class="track__logo"><img src="images/t06.jpg"></div>
+          <div class="track__info">
+          <div class="track__name header-name"><a class="track__name-link" href="">Left and Right (feat. Jong Kook of BTS)</a></div>
+          <div class="track__author"><a class="track__author-link" href="">Charlie Puth</a></div>
+
+            <ul class="track__genres-list genres-list">
+              <li class="track__genre"><a href="" class="track__genre-text first-genre">pop</a></li>
+              <li class="track__genre"><a href="" class="track__genre-text">jungkook</a></li>
+              <li class="track__genre"><a href="" class="track__genre-text">2022</a></li>
+            </ul>
+
+          </div>
+        </div>
+        <div class="track">
+          <div class="track__logo"><img src="images/t07.jpg"></div>
+          <div class="track__info">
+          <div class="track__name header-name"><a class="track__name-link" href="">Yet to Come</a></div>
+          <div class="track__author"><a class="track__author-link" href="">BTS</a></div>
+
+            <ul class="track__genres-list genres-list">
+              <li class="track__genre"><a href="" class="track__genre-text first-genre">k-pop</a></li>
+              <li class="track__genre"><a href="" class="track__genre-text">bts</a></li>
+              <li class="track__genre"><a href="" class="track__genre-text">korean</a></li>
+            </ul>
+
+          </div>
+        </div>
+        <div class="track">
+          <div class="track__logo"><img src="images/t08.jpg"></div>
+          <div class="track__info">
+          <div class="track__name header-name"><a class="track__name-link" href="">Die for You</a></div>
+          <div class="track__author"><a class="track__author-link" href="">Joji</a></div>
+
+            <ul class="track__genres-list genres-list">
+              <li class="track__genre"><a href="" class="track__genre-text first-genre">rnb</a></li>
+              <li class="track__genre"><a href="" class="track__genre-text">hip-hop</a></li>
+              <li class="track__genre"><a href="" class="track__genre-text">rap</a></li>
+            </ul>
+
+         </div>
+        </div>
+        <div class="track">
+          <div class="track__logo"><img src="images/t09.jpg"></div>
+          <div class="track__info">
+          <div class="track__name header-name"><a class="track__name-link" href="">Unholy (feat. Kim Petras)</a></div>
+          <div class="track__author"><a class="track__author-link" href="">Sam Smith</a></div>
+
+            <ul class="track__genres-list genres-list">
+              <li class="track__genre"><a href="" class="track__genre-text first-genre">hyperpop</a></li>
+              <li class="track__genre"><a href="" class="track__genre-text">pop</a></li>
+              <li class="track__genre"><a href="" class="track__genre-text">electropop</a></li>
+            </ul>
+
+          </div>
+        </div>
+        <div class="track">
+          <div class="track__logo"><img src="images/t10.jpg"></div>
+          <div class="track__info">
+          <div class="track__name header-name"><a class="track__name-link" href="">poppy</a></div>
+          <div class="track__author"><a class="track__author-link" href="">Stay-C</a></div>
+
+            <ul class="track__genres-list genres-list">
+              <li class="track__genre"><a href="" class="track__genre-text first-genre">stayc</a></li>
+              <li class="track__genre"><a href="" class="track__genre-text">k-pop</a></li>
+              <li class="track__genre"><a href="" class="track__genre-text">kpop</a></li>
+            </ul>
+
+          </div>
+        </div>
+        <div class="track">
+          <div class="track__logo"><img src="images/t11.jpg"></div>
+          <div class="track__info">
+          <div class="track__name header-name"><a class="track__name-link" href="">MORE</a></div>
+          <div class="track__author"><a class="track__author-link" href="">j-hope</a></div>
+
+            <ul class="track__genres-list genres-list">
+              <li class="track__genre"><a href="" class="track__genre-text first-genre">rock</a></li>
+              <li class="track__genre"><a href="" class="track__genre-text">hip-hop</a></li>
+              <li class="track__genre"><a href="" class="track__genre-text">rap</a></li>
+            </ul>
+
+          </div>
+        </div>
+        <div class="track">
+          <div class="track__logo"><img src="images/t12.jpg"></div>
+          <div class="track__info">
+          <div class="track__name header-name"><a class="track__name-link" href="">Shut Down</a></div>
+          <div class="track__author"><a class="track__author-link" href="">BLACKPINK</a></div>
+          <ul class="track__genres-list genres-list">
+            <li class="track__genre"><a href="" class="track__genre-text first-genre">k-pop</a></li>
+            <li class="track__genre"><a href="" class="track__genre-text">pop</a></li>
+          </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="footer__upper-line"></div>
+      <div class="footer__navigation">
+        <div class="footer__navigation-block">
+          <ul class="footer__navigation-list">
+            <li class="footer__header-of-block">Company</li>
+            <li class="footer__links"><a href="">About Last.fm</a></li>
+            <li class="footer__links"><a href="">Contact Us</a></li>
+            <li class="footer__links"><a href="">Jobs</a></li>
+          </ul>
+        </div>
+        <div class="footer__navigation-block">
+          <ul class="footer__navigation-list">
+            <li class="footer__header-of-block">Help</li>
+            <li class="footer__links"><a href="">Track My Music</a></li>
+            <li class="footer__links"><a href="">Community Support</a></li>
+            <li class="footer__links"><a href="">Community Guidelines</a></li>
+            <li class="footer__links"><a href="">Help</a></li>
+          </ul>
+        </div>
+        <div class="footer__navigation-block">
+          <ul class="footer__navigation-list">
+            <li class="footer__header-of-block">Goodies</li>
+            <li class="footer__links"><a href="">Download Scrobbler</a></li>
+            <li class="footer__links"><a href="">Developer API</a></li>
+            <li class="footer__links"><a href="">Free Music Downloads</a></li>
+            <li class="footer__links"><a href="">Merchandise</a></li>
+          </ul>
+        </div>
+        <div class="footer__navigation-block">
+          <ul class="footer__navigation-list">
+            <li class="footer__header-of-block">Account</li>
+            <li class="footer__links"><a href="">Inbox</a></li>
+            <li class="footer__links"><a href="">Settings</a></li>
+            <li class="footer__links"><a href="">Last.fm Pro</a></li>
+            <li class="footer__links"><a href="">Logout</a></li>
+          </ul>
+        </div>
+        <div class="footer__navigation-block">
+          <ul class="footer__navigation-list">
+            <li class="footer__header-of-block">Follow us</li>
+            <li class="footer__links"><a href="">Facebook</a></li>
+            <li class="footer__links"><a href="">Twitter</a></li>
+            <li class="footer__links"><a href="">Instagram</a></li>
+            <li class="footer__links"><a href="">YouTube</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__end">
+        <ul class="footer__languages footer__list">
+          <li class="footer__language active-language"><a href="">English</a></li>
+          <li class="footer__language"><a href="" class="footer__list-text">Deutsch</a></li>
+          <li class="footer__language"><a href="" class="footer__list-text">Español</a></li>
+          <li class="footer__language"><a href="" class="footer__list-text">Français</a></li>
+          <li class="footer__language"><a href="" class="footer__list-text">Italiano</a></li>
+          <li class="footer__language"><a href="" class="footer__list-text">日本語</a></li>
+          <li class="footer__language"><a href="" class="footer__list-text">Polski</a></li>
+          <li class="footer__language"><a href="" class="footer__list-text">Português</a></li>
+          <li class="footer__language"><a href="" class="footer__list-text">Русский</a></li>
+          <li class="footer__language"><a href="" class="footer__list-text">Svenska</a></li>
+          <li class="footer__language"><a href="" class="footer__list-text">Türkçe</a></li>
+          <li class="footer__language"><a href="" class="footer__list-text">简体中文</a></li>
+        </ul>
+        <a class="footer__time-zone" href="">Time zone: <span class="footer__time-zone-white">Europe/Moscow</span></a>
+        <ul class="footer__last-nav footer__list">
+          <li class="footer__last-info"><a href="" class="footer__list-text">CBS Interactive</a></li>
+          <li class="footer__last-info footer__list-text footer__just-text">© 2022 Last.fm Ltd. All rights reserved</li>
+          <li class="footer__last-info"><a href="" class="footer__list-text">Terms of Use</a></li>
+          <li class="footer__last-info"><a href="" class="footer__list-text">Privacy Policy</a></li>
+          <li class="footer__last-info"><a href="" class="footer__list-text">Legal Policies</a></li>
+          <li class="footer__last-info"><a href="" class="footer__list-text">Cookies Policy</a></li>
+          <li class="footer__last-info"><a href="" class="footer__list-text">Cookie Information</a></li>
+          <li class="footer__last-info"><a href="" class="footer__list-text">Jobs at ViacomCBS</a></li>
+          <li class="footer__last-info"><a href="" class="footer__list-text">Last.fm Music</a></li>
+        </ul>
+        <div class="footer__audioscrobbler">
+          <p class="footer__audioscrobbler-text">Audioscrobbler</p>
+          <img class="footer__img" src="images/asc.png">
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
